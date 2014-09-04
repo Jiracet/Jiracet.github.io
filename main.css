@@ -1,13 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
 body {
 	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #header {
+	padding:0px;
 	z-index: 1;
 	background-color: #585858;
 	display: block;
 	height: 50px;
 	width: 100%;
+}
+
+#header div {
+	margin:0px auto;
+	padding:0px;
+	width:970px;
+}
+
+#header ul {
+	float:right;
+	margin:0px;
+}
+
+#header li {
+	float:left;
+	display:inline-block;
+	
+	text-align:center;
+	line-height:50px;
+	vertical-align:middle;
+	
+	width:100px;
+	height:50px;
+}
+
+#header a {
+	color:#ffffff;
+	text-decoration:none;
+	float:left;
+	display:inline-block;
+	width:100px;
+	height:50px;
+}
+
+#menuselected {
+	
 }
 
 footer {
@@ -26,17 +66,19 @@ footer {
 	margin: 0px auto;
 	margin-bottom: 150px;
 	
-	height: 9000px;
+	height: 2000px;
 	
-	background-color: #FFFFFF;
+	background-color: #ffeba4;
 }
 
 #main-content {
 	position: relative;
 	width: 970px;
-	height: 9000px;
+	height: 2000px;
 	margin: 0px auto;
-	background-color:#00cc00;
+	top:20px;
+	background-color:#fff5d1;
+	border-radius: 10px;
 }
 
 .right-col {
@@ -47,8 +89,6 @@ footer {
 	
 	width: 670px;
 	height: 500px;
-	
-	background-color: #000000
 }
 
 .left-col {
@@ -58,6 +98,4 @@ footer {
 	
 	width: 270px;
 	height: 500px;
-	
-	background-color: #000000
 }

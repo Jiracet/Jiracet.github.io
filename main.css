@@ -6,7 +6,7 @@ body {
 }
 
 #header {
-	padding:0px;
+	position:fixed;
 	z-index: 1;
 	background-color: #585858;
 	display: block;
@@ -14,14 +14,21 @@ body {
 	width: 100%;
 }
 
-#header div {
+#header h2 {
+	margin:0px;
+	line-height:50px;
+	color:#ffffff;
+	display:inline-block;
+}
+
+#menu {
 	margin:0px auto;
-	padding:0px;
 	width:970px;
 }
 
 #header ul {
 	float:right;
+	top:0px;
 	margin:0px;
 }
 
@@ -31,7 +38,6 @@ body {
 	
 	text-align:center;
 	line-height:50px;
-	vertical-align:middle;
 	
 	width:100px;
 	height:50px;
@@ -50,6 +56,19 @@ body {
 	
 }
 
+#homeimage {
+	margin-top:20px;
+	width:95%;
+	border-radius:10px;
+}
+
+#avatarimage {
+	margin-top:20px;
+	margin-left:20px;
+	width:90%;
+	border-radius:10px;
+}
+
 footer {
 	z-index: -1;
 	background-color: #585858;
@@ -60,13 +79,20 @@ footer {
 	height: 150px;
 }
 
+footer a {
+	color: #ffffff;
+	text-align:center;
+	text-decoration:none;
+	line-height:200px;
+}
+
 #main {
 	position: relative;
 	
 	margin: 0px auto;
 	margin-bottom: 150px;
 	
-	height: 2000px;
+	height: 1000px;
 	
 	background-color: #ffeba4;
 }
@@ -74,9 +100,9 @@ footer {
 #main-content {
 	position: relative;
 	width: 970px;
-	height: 2000px;
+	height: 1000px;
 	margin: 0px auto;
-	top:20px;
+	top:70px;
 	background-color:#fff5d1;
 	border-radius: 10px;
 }
@@ -86,7 +112,9 @@ footer {
 	
 	display: block;
 	float: right;
+	text-align:left;
 	
+	margin: 0px auto;
 	width: 670px;
 	height: 500px;
 }
@@ -96,6 +124,13 @@ footer {
 	display: block;
 	float: left;
 	
+	margin: 0px auto;
 	width: 270px;
 	height: 500px;
+}
+
+.left-col a {
+	margin-left: 20px;
+	text-decoration:none;
+	display:block;
 }

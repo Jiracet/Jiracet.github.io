@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$(window).scroll(function (event) {
+		var scroll = $(window).scrollTop();
+		
+		
+	});
+	
 	$('#header a').hover(function() {
 		$(this).stop();
 		$(this).animate({color:'#585858'}, 100);

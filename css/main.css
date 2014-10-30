@@ -19,6 +19,8 @@ body {
 	line-height:50px;
 	color:#ffffff;
 	display:inline-block;
+	
+	float: left;
 }
 
 #menu {
@@ -27,8 +29,9 @@ body {
 }
 
 #header ul {
+	list-style-position: inside;
 	float:right;
-	top:0px;
+	top: 0px;
 	margin:0px;
 	padding: 0px;
 }

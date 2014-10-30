@@ -2,8 +2,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function (event) {
 		var scroll = $(window).scrollTop();
-		
-		
+
 	});
 	
 	$('#header a').hover(function() {

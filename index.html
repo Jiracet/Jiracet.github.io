@@ -6,26 +6,26 @@
 		<title>Jiracet</title>
 	</head>
 	
-	<body>
+	<body ng-controller="TabController as tab">
 	<!-- Header -->
 	<header id="header">
-		<div id="menu">	
+		<div id="menu">
 			<h2>Joseph Suh</h2>
-			<section class="tab" ng-controller="TabController as tab">
-			<ul>
-				<li ng-class="{active:tab.isSelected(1)}">
-					<a href ng-click="panel.selectTab(1)">Home</a>
-				</li>
-				<li ng-class="{active:tab.isSelected(2)}">
-				<a href ng-click="panel.selectTab(2)">Projects</a>
-				</li>
-				<li ng-class="{active:tab.isSelected(3)}">
-				<a href ng-click="panel.selectTab(3)">Resume</a>
-				</li>
-				<li ng-class="{active:tab.isSelected(4)}">
-				<a href ng-click="panel.selectTab(4)">Contact</a>
-				</li>
-			</ul>
+			<section class="tab">
+				<ul>
+					<li ng-class="{active:tab.isSelected(1)}">
+						<a href ng-click="tab.selectTab(1)">Home</a>
+					</li>
+					<li ng-class="{active:tab.isSelected(2)}">
+						<a href ng-click="tab.selectTab(2)">Projects</a>
+					</li>
+					<li ng-class="{active:tab.isSelected(3)}">
+						<a href ng-click="tab.selectTab(3)">Resume</a>
+					</li>
+					<li ng-class="{active:tab.isSelected(4)}">
+						<a href ng-click="tab.selectTab(4)">Contact</a>
+					</li>
+				</ul>
 			</section>
 		</div>
 	</header>
@@ -57,15 +57,15 @@
 			</div>
 			
 			<div ng-show="tab.isSelected(2)">
-				{{tab.isSelected(2)}}
+				2
 			</div>
 			
 			<div ng-show="tab.isSelected(3)">
-				
+				3
 			</div>
 			
 			<div ng-show="tab.isSelected(4)">
-				
+				4
 			</div>
 			
 			
@@ -83,6 +83,8 @@
     <script src="js/angular.min.js"></script>
 
 	<script src="js/app.js"></script>
+
+	<script src="js/controllers/tabcontroller.js"></script>
 	
 	</body>
 </html>

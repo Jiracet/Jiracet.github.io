@@ -1,4 +1,4 @@
-TabController.controller('TabController', function() {
+angular.module('app', []).controller('TabController', function() {
 	this.tab = 1;
 	
 	this.selectTab = function(setTab) {

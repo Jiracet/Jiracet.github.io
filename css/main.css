@@ -24,8 +24,11 @@ body {
 }
 
 #menu {
+	position: relative;
 	margin:0px auto;
-	width:970px;
+	width:85%;
+	max-width: 970px;
+	min-width: 550px;
 }
 
 #header ul {
@@ -61,8 +64,7 @@ body {
 }
 
 #homeimage {
-	margin-top:20px;
-	width:95%;
+	width:100%;
 	border-radius:10px;
 }
 
@@ -103,9 +105,11 @@ footer a {
 
 #main-content {
 	position: relative;
-	width: 970px;
+	width: 85%;
+	max-width: 970px;
 	height: 1000px;
 	margin: 0px auto;
+	padding: 20px;
 	top:70px;
 	background-color:#fff5d1;
 	border-radius: 10px;

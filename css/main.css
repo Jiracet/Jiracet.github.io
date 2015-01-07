@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 
+* p {
+	margin-top: 0px;
+}
+
 body {
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
@@ -69,10 +73,10 @@ body {
 }
 
 #avatarimage {
-	margin-top:20px;
-	margin-left:20px;
-	width:90%;
+	padding: 0px 20px 0px 0px;
+	width: 200px;
 	border-radius:10px;
+	float:left;
 }
 
 footer {

@@ -6,29 +6,12 @@
 		<title>Jiracet</title>
 	</head>
 	
-	<body ng-controller="TabController as tab">
-
-	<header id="header">
-		<div id="menu">
+	<body>
+	<header id="nav-bar">
+		<div>
 			<a href="http://Jiracet.github.io">
 				<h2>Joseph Suh</h2>
 			</a>
-			<!--<section class="tab">
-				<ul>
-					<li ng-class="{active:tab.isSelected(1)}">
-						<a href ng-click="tab.selectTab(1)">Home</a>
-					</li>
-					<li ng-class="{active:tab.isSelected(2)}">
-						<a href ng-click="tab.selectTab(2)">Projects</a>
-					</li>
-					<li ng-class="{active:tab.isSelected(3)}">
-						<a href ng-click="tab.selectTab(3)">Resume</a>
-					</li>
-					<li ng-class="{active:tab.isSelected(4)}">
-						<a href ng-click="tab.selectTab(4)">Contact</a>
-					</li>
-				</ul>
-			</section>-->
 		</div>
 	</header>
 	
@@ -39,7 +22,7 @@
 				<div class="project-cell">
 					<a href="https://play.google.com/store/apps/details?id=com.jiracet.chroma">
 						<div class="img-container">
-							<img class="screens" src="images/chroma-screenshot.png">
+							<img src="images/chroma-screenshot.png">
 						</div>
 					</a>
 
@@ -47,9 +30,11 @@
 					<div class="description">Colorful, quirky endless bullet hell</div>
 					<div class="platform">Android</div>
 				</div>
+
+				<!-- add more games here -->
 			</div>
 			<div class="row">
-				<img src="images/Avatar.jpg">
+				<img src="images/avatar.png">
 
 				<p>I am a computer science student at the University of Waterloo. I like to experiment with
 					'black sheep' game genres and try to craft new and interesting experiences.
@@ -59,9 +44,7 @@
 						allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
 				<iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=Jiracet" style="width:130px; height:20px;"></iframe>
 
-				<script src="//platform.linkedin.com/in.js" type="text/javascript">
-					lang: en_US
-				</script>
+				<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
 				<script type="IN/Share" data-url="ca.linkedin.com/pub/joseph-suh/a3/205/1"></script>
 
 			</div>

@@ -9,6 +9,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
+
+	background-color: #ffeba4;
 }
 
 #nav-bar {
@@ -61,10 +63,10 @@ body {
 .background {
 	position: fixed;
 	width: 100%;
+	height: 100%;
 	bottom: 0px;
 
 	z-index: 1;
-	margin-bottom: 6em;
 }
 
 .background2 {
@@ -79,7 +81,7 @@ body {
 }
 
 footer {
-	z-index: -1;
+	z-index: 1;
 	background-color: #585858;
 	display: block;
 
@@ -87,6 +89,7 @@ footer {
 	bottom: 0px;
 
 	text-align: center;
+	line-height: 5em;
 	width: 100%;
 	height: 6em;
 }
@@ -106,7 +109,7 @@ footer a {
 	padding-top: 1em;
 	width: 100%;
 	
-	background-color: #ffeba4;
+
 }
 
 #main-content {

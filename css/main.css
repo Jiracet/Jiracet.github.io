@@ -126,6 +126,10 @@ footer a {
 	border-radius: 10px;
 }
 
+.twitter-container {
+	padding: 0px 20px 0px 20px;
+}
+
 .row {
 	position: relative;
 	display: block;

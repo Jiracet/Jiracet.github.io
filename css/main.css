@@ -158,6 +158,7 @@ footer a {
 .row img {
 	display: block;
 	width: 20%;
+	height: 20%;
 	float: left;
 
 	margin-right: 1em;

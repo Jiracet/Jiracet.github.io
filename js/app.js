@@ -1,34 +1,32 @@
 $(document).ready(function() {
 
-	$(window).scroll(function (event) {
-		var scroll = $(window).scrollTop();
+	for (var i = 0; i < rand(30, 20); i++) {
+		var colour = "#ffffff";
+		var randomColour = rand(5, 0);
 
-	});
-	
-	$('#header a').hover(function() {
-		$(this).stop();
-		$(this).animate({color:'#585858'}, 100);
-	}, function() {
-		$(this).animate({color:'#ffffff'}, 0);
-	});
-
-	$('#header li').hover(function() {
-		$(this).stop();
-		switch($('#header li').index(this)){
+		switch (randomColour) {
 			case 0:
-				$(this).animate({backgroundColor:'#acfda1'}, 100);
+				colour = "#ffeba4";
 				break;
 			case 1:
-				$(this).animate({backgroundColor:'#fda1a1'}, 100);
+				colour = "#fba0fc";
 				break;
 			case 2:
-				$(this).animate({backgroundColor:'#a1e8fd'}, 100);
+				colour = "#9e76b6";
 				break;
 			case 3:
-				$(this).animate({backgroundColor:'#bda1fd'}, 100);
+				colour = "#6ec8f0";
 				break;
+			case 4:
+				colour ="#abfca0"; //"#f3f18f";
 		}
-	}, function() {
-		$(this).animate({backgroundColor:'#585858'}, 0);
-	});
+
+		$(".stripe").append("<div class=.sub-stripe style=\"background-color:" + colour +
+		" ; height:" + rand(15, 5) + "px\"></div>");
+	}
 });
+
+// returns random number with length and start index start
+function rand(length, start) {
+	return Math.floor(Math.random() * length + start);
+}

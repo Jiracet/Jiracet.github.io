@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	for (var i = 0; i < rand(30, 20); i++) {
+	var numStripes = rand(10, 15);
+
+	for (var i = 0; i < numStripes; i++) {
 		var colour = "#ffffff";
 		var randomColour = rand(5, 0);
 
@@ -22,7 +24,7 @@ $(document).ready(function() {
 		}
 
 		$(".stripe").append("<div class=.sub-stripe style=\"background-color:" + colour +
-		" ; height:" + rand(15, 5) + "px\"></div>");
+		" ; height:" + rand(15, 1) + "px\"></div>");
 	}
 });
 

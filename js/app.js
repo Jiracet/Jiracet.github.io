@@ -26,6 +26,12 @@ $(document).ready(function() {
 		$(".stripe").append("<div class=.sub-stripe style=\"background-color:" + colour +
 		" ; height:" + rand(15, 1) + "px\"></div>");
 	}
+
+	$('.icon img').hover(function() {
+		$(this).stop().animate({opacity: 1}, "fast");
+	}, function() {
+		$(this).stop().animate({opacity: 0.4}, "fast");
+	});
 });
 
 // returns random number with length and start index start

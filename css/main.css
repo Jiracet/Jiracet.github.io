@@ -118,14 +118,16 @@ footer a {
 	background-color: #585858;
 }
 
-.row img {
-	display: block;
-	width: 20%;
-	min-height: 20%;
+.row > img {
+	width: 18%;
+	height: 18%;
+
 	float: left;
 
-	margin-right: 1em;
+	min-width: 7em;
+	min-height: 7em;
 
+	margin-right: 1em;
 	border-radius: 10px;
 }
 

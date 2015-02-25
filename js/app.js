@@ -32,6 +32,12 @@ $(document).ready(function() {
 	}, function() {
 		$(this).stop().animate({opacity: 0.4}, "fast");
 	});
+
+	$('.project-cell .img-container').hover(function() {
+		$("img", this).stop().animate({opacity: 1}, "fast");
+	}, function() {
+		$("img", this).stop().animate({opacity: 0.8}, "fast");
+	});
 });
 
 // returns random number with length and start index start

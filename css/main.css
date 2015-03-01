@@ -173,7 +173,6 @@ footer .bottom {
 
 	margin: 1em 0px 1em 0px;
 	padding: 1em;
-	max-width: 100%;
 
 	color: #585858;
 }
@@ -228,6 +227,18 @@ footer .bottom {
 	position: relative;
 	padding: 2px 0 2px 0;
 	border-bottom: 1px solid;
+}
+
+#screenshots {
+	display: block;
+	position: relative;
+
+	width: 100%;
+}
+
+#screenshots img {
+	margin: 0 auto 0 auto;
+	width: 32%;
 }
 
 .img-container {

@@ -1,14 +1,27 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 
 * p {
-	margin-top: 0px;
-	line-height: 2;
+	margin-top: 0;
+	line-height: 1.75;
+	font-size: 14px;
+}
+
+* a {
+	margin-top: 0;
+	line-height: 1.75;
+	font-size: 14px;
+}
+
+* h3 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 12px;
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Arial', 'Helvetica', sans-serif;
 
 	background-color: #ffeba4;
 }
@@ -58,23 +71,45 @@ body {
 }
 
 footer {
-	z-index: 1;
 	background-color: #585858;
-	display: block;
+	color: #ffffff;
 
 	position: fixed;
-	bottom: 0px;
+	bottom: 0;
 
-	text-align: center;
-	line-height: 5em;
 	width: 100%;
 	height: 6em;
 }
 
 footer a {
 	color: #ffffff;
+	padding: auto 0 auto;
 	text-align: center;
 	text-decoration: none;
+}
+
+footer .top {
+	position: relative;
+	margin: 0 auto;
+
+	line-height: 4;
+
+	height: 4em;
+	text-align: center;
+}
+
+footer .bottom {
+	position: relative;
+	margin: 0 auto 0 auto;
+
+	line-height: 3;
+
+	color: #ffffff;
+	font-size: 12px;
+	border-top: solid 1px #424242;
+
+	width: 98%;
+	max-width: 84em;
 }
 
 #main {
@@ -85,8 +120,6 @@ footer a {
 
 	padding-top: 1em;
 	width: 100%;
-	
-
 }
 
 #main-content {
@@ -94,7 +127,6 @@ footer a {
 	z-index: 2;
 
 	width: 98%;
-	height: 48em;
 	max-width: 64em;
 
 	margin: 0px auto 7em auto;
@@ -107,7 +139,6 @@ footer a {
 
 .row {
 	position: relative;
-	display: block;
 	clear: both;
 
 	margin: 1em 0px 1em 0px;
@@ -136,6 +167,17 @@ footer a {
 	padding: 0;
 }
 
+.row-2 {
+	position: relative;
+	clear: both;
+
+	margin: 1em 0px 1em 0px;
+	padding: 1em;
+	max-width: 100%;
+
+	color: #585858;
+}
+
 /* Project Grid */
 
 #project-grid {
@@ -155,6 +197,7 @@ footer a {
 	margin-left: auto;
 	margin-right: auto;
 
+	color: #585858;
 	border-color: #585858
 }
 
@@ -164,7 +207,6 @@ footer a {
 
 	text-align: center;
 	font-size: 12px;
-	color: #585858
 
 	min-height: 17px;
 
@@ -176,19 +218,13 @@ footer a {
 	position: relative;
 	padding: 2px 0px 2px 0px;
 
-	font-size: 20px;
+	font-size: 18px;
 	min-height: 24px;
 
 	border-bottom: 1px solid;
 }
 
 .project-cell .description {
-	position: relative;
-	padding: 2px 0 2px 0;
-	border-bottom: 1px solid;
-}
-
-.project-cell .platform {
 	position: relative;
 	padding: 2px 0 2px 0;
 	border-bottom: 1px solid;
@@ -206,7 +242,6 @@ footer a {
 	max-height: 20em;
 
 	float: left;
-	background-color: white;
 }
 
 .img-container img {
@@ -224,11 +259,23 @@ footer a {
 
 .icon {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	height: 30px;
+
+	margin: 0 1em 1em 1em;
+
+	text-decoration: none;
+	clear: both;
+}
+
+.icon p {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0 0.5em;
+	color: white;
 }
 
 .icon img {
+	display: inline-block;
 	position: relative;
 	opacity: 0.4;
 

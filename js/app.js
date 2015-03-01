@@ -27,10 +27,10 @@ $(document).ready(function() {
 		" ; height:" + rand(15, 1) + "px\"></div>");
 	}
 
-	$('.icon img').hover(function() {
-		$(this).stop().animate({opacity: 1}, "fast");
+	$('.icon').hover(function() {
+		$("img", this).stop().animate({opacity: 1}, "fast");
 	}, function() {
-		$(this).stop().animate({opacity: 0.4}, "fast");
+		$("img", this).stop().animate({opacity: 0.4}, "fast");
 	});
 
 	$('.project-cell .img-container').hover(function() {

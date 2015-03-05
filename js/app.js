@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 		switch (randomColour) {
 			case 0:
-				colour = "#ffeba4";
+				colour = "#fff5d1";
 				break;
 			case 1:
 				colour = "#fba0fc";

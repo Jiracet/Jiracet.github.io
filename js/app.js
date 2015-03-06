@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	var numStripes = rand(10, 15);
+	var width = $(window).width();
 
 	for (var i = 0; i < numStripes; i++) {
 		var colour = "#ffffff";
@@ -38,6 +39,20 @@ $(document).ready(function() {
 	}, function() {
 		$("img", this).stop().animate({opacity: 0.8}, "fast");
 	});
+
+	$(window).resize();
+});
+
+$(window).resize(function() {
+	width = $(window).width();
+
+	if (width < 970) {
+		$("#main-container").css('width', '100%');
+		$("#side-bar").css('width', '100%');
+	} else {
+		$("#main-container").css('width', '66%');
+		$("#side-bar").css('width', '33%');
+	}
 });
 
 // returns random number with length and start index start

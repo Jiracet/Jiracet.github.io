@@ -149,9 +149,7 @@ footer .bottom {
 	width: 98%;
 	max-width: 970px;
 
-	margin: 0 auto;
-
-	/*background-color: #fff9e6;*/
+	margin: 0 auto 1em auto;
 }
 
 #main-container {
@@ -166,7 +164,7 @@ footer .bottom {
 	display: block;
 	position: relative;
 
-	margin: 1em 0 1em 0;
+	margin: 1em 0 0 0;
 	padding: 0em 1em 1em 1em;
 
 	color: #ffffff;
@@ -193,7 +191,6 @@ footer .bottom {
 	float: right;
 
 	width: 33%;
-	min-width: 320px;
 }
 
 #side-bar #bio {

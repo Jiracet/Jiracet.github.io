@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var numStripes = rand(10, 15);
+	var numStripes = rand(5, 15);
 	var width = $(window).width();
 
 	for (var i = 0; i < numStripes; i++) {
@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 		switch (randomColour) {
 			case 0:
-				colour = "#fff5d1";
+				colour = "transparent";
 				break;
 			case 1:
 				colour = "#fba0fc";

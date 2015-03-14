@@ -48,35 +48,44 @@ body {
 	background: #fff2c4 url("../images/background-pattern.png") repeat;
 }
 
-#nav-bar {
+header {
 	position: relative;
+	text-align: center;
 
-	z-index: 1;
-	background-color: #585858;
-	display: block;
+	padding-top: 1em;
 
 	width: 100%;
-	height: 3em;
 }
 
-#nav-bar div {
-	position: relative;
-	margin: 0 auto 0 auto;
-	width: 95%;
-	max-width: 970px;
-}
-
-#nav-bar h2 {
-	position: relative;
+header h1 {
+	padding: 0.25em 0 0 0;
 	margin: 0;
-	padding-left: 0.5em;
 
-	line-height: 1.5;
+	color: #585858;
+}
 
-	color: #ffffff;
+header img {
+	width: 6em;
+}
 
-	font-size: 30px;
-	float: left;
+#nav-bar {
+	position: relative;
+	display: block;
+
+	padding-top: 0em;
+
+	text-align: center;
+	width: 100%;
+}
+
+#nav-bar a {
+	display: inline-block;
+	font-size: 14px;
+
+	padding: 0 0.5em 0 0.5em;
+
+	text-decoration: none;
+	color: #585858;
 }
 
 .stripe {

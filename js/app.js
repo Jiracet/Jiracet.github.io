@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(window).resize();
 
 	var numStripes = rand(5, 15);
 	var width = $(window).width();
@@ -35,12 +36,10 @@ $(document).ready(function() {
 	});
 
 	$('.project-cell .img-container').hover(function() {
-		$("img", this).stop().animate({opacity: 1}, "fast");
+		$("img", this).stop().animate({opacity: 1}, 50, 'linear');
 	}, function() {
-		$("img", this).stop().animate({opacity: 0.8}, "fast");
+		$("img", this).stop().animate({opacity: 0.8}, 50, 'linear');
 	});
-
-	$(window).resize();
 });
 
 $(window).resize(function() {

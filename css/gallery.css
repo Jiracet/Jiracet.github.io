@@ -1,0 +1,22 @@
+.gallery-container {
+    margin: 1em 0 1em 0;
+
+    width: 100%;
+}
+
+.gallery-img {
+    display: inline-block;
+    width: 24.5%;
+}
+
+.gallery-img a {
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+.gallery-container img {
+    width: 100%;
+}
+

@@ -161,6 +161,7 @@ footer .bottom {
 
 	padding-top: 1em;
 	width: 100%;
+	min-height: 50em;
 }
 
 #main-content {

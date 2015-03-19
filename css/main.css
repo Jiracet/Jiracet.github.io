@@ -79,7 +79,7 @@ header .banner img {
 	position: relative;
 	display: block;
 
-	padding-top: 0em;
+	padding-top: 0;
 
 	text-align: center;
 	width: 100%;
@@ -91,8 +91,24 @@ header .banner img {
 
 	padding: 0 0.5em 0 0.5em;
 
+	opacity: 1;
+
 	text-decoration: none;
 	color: #585858;
+}
+
+#nav-bar p {
+	display: inline-block;
+	font-size: 14px;
+
+	padding: 0 0.5em 0 0.5em;
+
+	text-decoration: none;
+	color: #585858;
+}
+
+#nav-bar a#selected {
+	color: #1595ea;
 }
 
 .stripe {
@@ -161,7 +177,6 @@ footer .bottom {
 
 	padding-top: 1em;
 	width: 100%;
-	min-height: 50em;
 }
 
 #main-content {

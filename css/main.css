@@ -55,6 +55,7 @@ header {
 	padding-top: 1em;
 
 	width: 100%;
+	z-index: 1;
 }
 
 header h1 {
@@ -117,6 +118,7 @@ header .banner img {
 	height: 20%;
 
 	margin: auto;
+	z-index: -1;
 
 	top: 0;
 	bottom: 0;
@@ -181,7 +183,7 @@ footer .bottom {
 
 #main-content {
 	position: relative;
-	z-index: 2;
+	z-index: 0;
 	overflow: hidden;
 
 	width: 98%;

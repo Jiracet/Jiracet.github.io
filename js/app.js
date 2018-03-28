@@ -42,6 +42,7 @@ $(document).ready(function() {
 		" ; height:" + rand(7, 3) + "px\"></div>");
 	}
 
+	/*
 	$('.icon').hover(function() {
 		$("img", this).stop().animate({opacity: 1}, "fast");
 	}, function() {
@@ -53,6 +54,7 @@ $(document).ready(function() {
 	}, function() {
 		$("img", this).stop().animate({opacity: 0.8}, 50, 'linear');
 	});
+	*/
 });
 
 /*

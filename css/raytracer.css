@@ -1,0 +1,43 @@
+.img-container {
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+
+	width: 20em;
+	height: 25em;
+
+	max-height: 20em;
+}
+
+.img-container img {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: auto;
+	opacity: 1;
+}
+
+.sub-img-container {
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+
+	width: 10em;
+    height: 10em;
+
+	max-height: 12em;
+}
+
+.sub-img-container img {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: auto;
+	opacity: 1;
+}

@@ -268,11 +268,13 @@ footer .bottom {
 	position: relative;
 	color: #3f3e3c;
 	border-color: #3f3e3c;
+	margin-bottom:2em;
 }
 
 .project-cell .info h1 {
 	font-size: 22px;
 	color: #e24c72;
+	margin:0;
 }
 
 .project-cell .nospace {
@@ -324,12 +326,34 @@ footer .bottom {
 	overflow: hidden;
 
 	width: 20em;
-	height: 30em;
+	height: 20em;
 
 	max-height: 20em;
 }
 
 .img-container img {
+	position: absolute;
+
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: auto;
+	opacity: 1;
+}
+
+.sub-img-container {
+	display: table-cell;
+	position: relative;
+	overflow: hidden;
+
+	width: 10em;
+    height: 10em;
+
+	max-height: 12em;
+}
+
+.sub-img-container img {
 	position: absolute;
 
 	left: 0;

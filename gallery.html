@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en-US">
+
+    <title>Jiracet | Gallery</title>
+    <meta name="keywords" content="jiracet, joseph suh, computer science degree, waterloo, video games, games, student developer, indie">
+
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/gallery.css">
+    <link href="css/lightbox.css" rel="stylesheet"/>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body ng-app="app">
+<header>
+    <div class="banner"><a href="http://jiracet.com"><img src="images/home/avatar.png"></a></div>
+
+    <h1>Jiracet</h1>
+
+    <div id="nav-bar">
+        <a href="http://jiracet.com">Home</a>
+        <a href="http://jiracet.com/about">About</a>
+        <a href="http://jiracet.com/resume">Resume</a>
+        <a id="selected" href="http://jiracet.com/gallery">Gallery</a>
+    </div>
+
+    <div class="page-divider"></div>
+</header>
+
+<!-- Content -->
+<div id="main">
+    <div id="main-content">
+        <h3>Chroma</h3>
+
+        <div class="row">
+            <table class="gallery-container" ng-controller="GalleryController"
+                   ng-init="init('chroma', 15)">
+
+                <td class="gallery-img" ng-repeat="image in images">
+                    <a href="{{image}}" data-lightbox="chroma"><img ng-src="{{image}}"></a>
+                </td>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="stripe"></div>
+
+<!-- Footer -->
+<footer>
+    <div class="page-divider"></div>
+    <div class="top">
+        <a href="#">Back to top</a>
+    </div>
+
+    <div class="bottom">
+        © Joseph Suh - Jiracet. All Rights Reserved.
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.color-2.1.2.min.js"></script>
+
+<script src="js/lightbox.min.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/angular.min.js"></script>
+<script src="js/controllers/gallerycontroller.js"></script>
+
+</body>
+</html>

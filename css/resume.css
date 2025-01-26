@@ -1,0 +1,16 @@
+.download-link {
+    color: #e24c72;
+    text-decoration: none;
+}
+
+.resume-img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#resume-container {
+    margin: 0 auto 0 auto;
+    padding-top: 2em;
+
+    width: 100%;
+}

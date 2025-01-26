@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en-US">
+    <title>Jiracet</title>
+    <meta name="keywords" content="jiracet, joseph suh, computer science degree, waterloo, video games, games, student developer, indie">
+
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/raytracer.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <a href="http://jiracet.com">
+                <img src="images/home/avatar.png">
+            </a>
+        </div>
+
+        <h1>Jiracet</h1>
+
+        <div id="nav-bar">
+            <a href="http://jiracet.com">Home</a>
+            <a href="http://jiracet.com/about">About</a>
+            <a href="http://jiracet.com/resume">Resume</a>
+            <a href="http://jiracet.com/gallery">Gallery</a>
+        </div>
+
+        <div class="page-divider"></div>
+    </header>
+
+    <!-- Content -->
+    <div id="main">
+        <div id="main-content">
+            <div id="main-container">
+                <div class="row">
+                    <h3>CS488 Raytracer Final Project</h3>
+                    <p>This project was done for my final project for the Winter 2018 offering of CS488 at the University
+                        of Waterloo.</p>
+                    <div style="padding-top:2em" class="page-divider"></div>
+                </div>
+
+                <div class="row">
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="primitives" href="images/raytracer/1-primitives.png">
+                                <img src="images/raytracer/1-primitives.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 1 - Extra Primitives</h3>
+                            <p>Extra cone and cylinder primitives were implemented by obtaining intersection points from corresponding
+                                parametric equations. The caps of the cylinder and cone were intersected against halfspaces.
+                                As for side intersections, the cylinder equation is x^2 + y^2 = r and the cone equation is
+                                x^2 + y^2 = z^2</p>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="textures" href="images/raytracer/2-texturemap.png">
+                                <img src="images/raytracer/2-texturemap.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 2 - Texture Mapping</h3>
+                            <p>Texture mapping was implemented by mapping 3d surface coordinates to 2d texture coordinates and
+                                applying the specified texture colour to the object's diffuse component. For basic triangles,
+                                barycentric coordinates were used to interpolate the texture coordinates.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="textures" href="images/raytracer/2-texturemap-2.png">
+                                    <img src="images/raytracer/2-texturemap-2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="bumpmap" data-title="Only bump mapping" href="images/raytracer/3-bumpmap-normals.png">
+                                <img src="images/raytracer/3-bumpmap-normals.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 3 - Bump Mapping</h3>
+                            <p>Bump mapping was implemented using normal maps which specified the normal vectors at points on
+                                the surface. The normal, tangent and bitangent vectors at the intersection point were used
+                                to convert the normal map's tangent normal to a model space normal.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="bumpmap" data-title="Only texture mapping" href="images/raytracer/3-bumpmap-textures.png">
+                                    <img src="images/raytracer/3-bumpmap-textures.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="bumpmap" href="images/raytracer/3-bumpmap-x1.png">
+                                    <img src="images/raytracer/3-bumpmap-x1.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="bumpmap" href="images/raytracer/3-bumpmap-x2.png">
+                                    <img src="images/raytracer/3-bumpmap-x2.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="bumpmap" href="images/raytracer/3-bumpmap-all-1.png">
+                                    <img src="images/raytracer/3-bumpmap-all-1.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="bumpmap" href="images/raytracer/3-bumpmap-all-2.png">
+                                    <img src="images/raytracer/3-bumpmap-all-2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="refraction" href="images/raytracer/4-refraction.png">
+                                <img src="images/raytracer/4-refraction.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 4 - Refraction</h3>
+                            <p>Refraction was implemented by recursively casting secondary rays based Snell's law which defines
+                                a relationship between refractive indices, incident vector and refracted vector. Fresnel
+                                equations were used to compute the reflectance for a given refractive material.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="refraction" data-title="Refractive index 1.01" href="images/raytracer/4-refraction-air.png">
+                                    <img src="images/raytracer/4-refraction-air.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="refraction" data-title="Refractive index 1.3" href="images/raytracer/4-refraction-water.png">
+                                    <img src="images/raytracer/4-refraction-water.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="refraction" data-title="Refractive index 2.4" href="images/raytracer/4-refraction-diamond.png">
+                                    <img src="images/raytracer/4-refraction-diamond.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="reflection" href="images/raytracer/5-reflection.png">
+                                <img src="images/raytracer/5-reflection.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 5 - Reflection</h3>
+                            <p>Mirror reflections was implemented by recursively casting secondary reflected rays from intersection
+                                points on reflective objects.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="reflection" data-title="Two adjacaent mirror planes" href="images/raytracer/5-reflection-2.png">
+                                    <img src="images/raytracer/5-reflection-2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="phongshading" data-title="Smooth shading on" href="images/raytracer/6-phongshading-2.png">
+                                <img src="images/raytracer/6-phongshading-2.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 6 - Phong Shading</h3>
+                            <p>Phong shading was implemented by interpolating vertex normals based on barycentric coordinates.
+                                Custom vertex normals were generated by taking the average of every vertex's intersected
+                                face normals. The result is a smoother looking surface using less vertices.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="phongshading" data-title="Smooth shading off" href="images/raytracer/6-phongshading-1.png">
+                                    <img src="images/raytracer/6-phongshading-1.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="perlinnoise" data-title="Mesh generated from multiple layers of noise" href="images/raytracer/7-perlinmesh-3.png">
+                                <img src="images/raytracer/7-perlinmesh-3.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 7 - Perlin Noise</h3>
+                            <p>A sample of 2D perlin noise was used to generate a heightmap mesh. By taking the negative abs()
+                                of the noise, ridged noise was able to be produced allowing for sharper peaks.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="perlinnoise" data-title="Regular perlin noise" href="images/raytracer/7-perlinmesh-1.png">
+                                    <img src="images/raytracer/7-perlinmesh-1.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="perlinnoise" data-title="Ridged perlin noise" href="images/raytracer/7-perlinmesh-2.png">
+                                    <img src="images/raytracer/7-perlinmesh-2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="softshadows" data-title="Soft shadows on" href="images/raytracer/8-softshadows-2.png">
+                                <img src="images/raytracer/8-softshadows-2.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 8 - Soft Shadows</h3>
+                            <p>Soft shadows was implemented by casting multiple shadow rays arranged in a uniformly distributed
+                                grid. Based on the fraction of rays which were obscured, the shadow intensity was altered.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="softshadows" data-title="Soft shadows off" href="images/raytracer/8-softshadows-1.png">
+                                    <img src="images/raytracer/8-softshadows-1.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="depthoffield" data-title="Focused on first sphere" href="images/raytracer/9-depthoffield-1.png">
+                                <img src="images/raytracer/9-depthoffield-1.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 9 - Depth of Field</h3>
+                            <p>Depth of field was implemented by creating and taking the average of multiple passes of the image
+                                with slightly modified eye positions. The modified eye positions were sampled from a jittered
+                                grid.
+                            </p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="depthoffield" data-title="Focused on second sphere" href="images/raytracer/9-depthoffield-2.png">
+                                    <img src="images/raytracer/9-depthoffield-2.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="depthoffield" data-title="Focused on third sphere" href="images/raytracer/9-depthoffield-3.png">
+                                    <img src="images/raytracer/9-depthoffield-3.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="finalscene" data-title="Final scene incorporating all objectives" href="images/raytracer/10-finalscene.png">
+                                <img src="images/raytracer/10-finalscene.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Objective 10 - Final Scene</h3>
+                            <p>All prior objectives are present in this image. Can you spot them all?</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="finalscene" data-title="Large version without depth of field" href="images/raytracer/10-finalscene-large.png">
+                                    <img src="images/raytracer/10-finalscene-large.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom:2em" class="page-divider"></div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="adaptiveaa" data-title="Similar colour detection" href="images/raytracer/11-adaptiveaa-2.png">
+                                <img src="images/raytracer/11-adaptiveaa-2.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Extra Objective 1 - Adaptive Anti-aliasing</h3>
+                            <p>Adaptive anti-aliasing was implemented by first sampling 5 rays per pixel and recursively subdividing
+                                and producing more rays depending on the difference of sub-pixel colours. This allowed for
+                                reduction of edge "jaggies" while also salvaging performance.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="adaptiveaa" data-title="Without Anti-aliasing" href="images/raytracer/11-adaptiveaa-1.png">
+                                    <img src="images/raytracer/11-adaptiveaa-1.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="adaptiveaa" data-title="With Anti-aliasing" href="images/raytracer/11-adaptiveaa-3.png">
+                                    <img src="images/raytracer/11-adaptiveaa-3.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="adaptiveaa" data-title="Without Anti-aliasing" href="images/raytracer/11-adaptiveaa-c1.png">
+                                    <img src="images/raytracer/11-adaptiveaa-c1.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="adaptiveaa" data-title="Similar colour detection" href="images/raytracer/11-adaptiveaa-c2.png">
+                                    <img src="images/raytracer/11-adaptiveaa-c2.png">
+                                </a>
+                            </div>
+
+                            <div class="sub-img-container">
+                                <a data-lightbox="adaptiveaa" data-title="With Anti-aliasing" href="images/raytracer/11-adaptiveaa-c3.png">
+                                    <img src="images/raytracer/11-adaptiveaa-c3.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-cell">
+                        <div class="img-container">
+                            <a data-lightbox="celshading" data-title="Final scene with cel shading" href="images/raytracer/12-celshading-x.png">
+                                <img src="images/raytracer/12-celshading-x.png">
+                            </a>
+                        </div>
+
+                        <div class="info">
+                            <h3>Extra Objective 2 - Cel Shading</h3>
+                            <p>Cel shading was implemented by grouping together gradients of specular and diffuse light within
+                                thresholds. Edges were identified and coloured black by using a Sobel filtered version of
+                                the original image.</p>
+                            <div class="sub-img-container">
+                                <a data-lightbox="celshading" data-title="Sobel filter" href="images/raytracer/12-celshading-sobel.png">
+                                    <img src="images/raytracer/12-celshading-sobel.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stripe"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="page-divider"></div>
+        <div class="top">
+            <a href="#">Back to top</a>
+        </div>
+
+        <div class="bottom">
+            © Joseph Suh - Jiracet. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.color-2.1.2.min.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <!-- Angular JS
+<script src="js/angular.min.js"></script>
+<script src="js/controllers/tabcontroller.js"></script>
+-->
+
+</body>
+
+</html>
